@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bpfm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-mnte-tenant/byoc-app-grzj/bpfm@sha256:4a0346a57985168432e8a4248df12af7ba1792abb9b70ad638746c54ed1710ef
+        name: my-java-quarkus
+        resources: {}
+status: {}
